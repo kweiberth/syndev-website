@@ -15,7 +15,8 @@
     "@emotion/styled": "^10.0.27",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@types/next": "^9.0.0",

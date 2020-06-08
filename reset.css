@@ -40,11 +40,6 @@ html {
 :before {
   box-sizing: inherit;
 }
-body,
-html {
-  font-family: Georgia, 'Times New Roman', serif;
-  line-height: 1.5;
-}
 a,
 abbr,
 address,
@@ -115,9 +110,8 @@ ul {
 
 /* custom css reset */
 html,
-#react-mount,
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   color: #14006b;
   line-height: 1.3;
   font-size: 14px;
@@ -134,7 +128,7 @@ html.wf-active body,
 html.wf-active #react-mount,
 html.wf-active button,
 html.wf-active input {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Fira Sans', Helvetica-Neue, Helvetica, Arial, sans-serif;
   line-height: 1.3;
 }
 
@@ -144,7 +138,7 @@ a {
 }
 
 button {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Fira Sans', Helvetica-Neue, Helvetica, Arial, sans-serif;
   color: #14006b;
   font-weight: 300;
   font-size: 14px;
