@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import styled from '@emotion/styled';
 import { colors, maxPageWidth } from 'utils/styles';
-import CaretRightIcon from 'components/svgs/atom-icon';
+import HexagonSolidIcon from 'components/svgs/hexagon-solid-icon';
 import Footer from 'components/footer';
 import Header from 'components/header';
 import Highlights from 'components/highlights';
@@ -51,6 +52,7 @@ const StickyHeader = styled.div(
 );
 
 export default function Home() {
+  const [selectedTab, setSelectedTab] = useState('expertise');
   return (
     <>
       <Head>
@@ -65,12 +67,12 @@ export default function Home() {
           flexDirection: 'column',
         }}
       >
-        <div css={{ flex: '1 0', '> *': { marginBottom: 24 } }}>
+        <div css={{ flex: '1 0' }}>
           <StickyHeader>
-            <Header />
+            <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
           </StickyHeader>
           <StickyHeader visibility="hidden" position="static">
-            <Header />
+            <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
           </StickyHeader>
 
           <div
@@ -97,13 +99,13 @@ export default function Home() {
                 <span
                   css={{
                     height: '100%',
-                    marginRight: 6,
+                    marginRight: 4,
                     '> svg': {
-                      marginBottom: 1,
+                      marginBottom: 0,
                     },
                   }}
                 >
-                  <CaretRightIcon color={colors.purple} height={10} />
+                  <HexagonSolidIcon color={colors.green} height={12} />
                 </span>
                 {competency}
               </div>

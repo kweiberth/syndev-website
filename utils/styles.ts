@@ -1,10 +1,10 @@
 export const colors = {
   white: 'white',
   black: 'black',
-  purple: '#14006b',
+  purple: '#150752',
   green: '#2E900C',
   greenTranslucent: '#2e900c4f',
-
+  transparent: 'rgba(255, 255, 255, 0.0001)',
   blueHyperlink: '#346ad1',
   grey: '#D3DEE7',
 };
