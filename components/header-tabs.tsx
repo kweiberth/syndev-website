@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { colors, breakpoints } from '../utils/styles';
+import { useRouter } from 'next/router';
 
 const Filters = styled.div({
   width: '100%',
@@ -34,7 +35,7 @@ const FilterText = styled.div(
     justifyContent: 'center',
     height: '100%',
     fontSize: 14,
-
+    fontWeight: 700,
     [breakpoints.mobile]: {
       fontSize: 13,
     },
@@ -44,7 +45,7 @@ const FilterText = styled.div(
     borderBottom: props.isActive
       ? `2px solid ${colors.green}`
       : `2px solid ${colors.transparent}`,
-    fontWeight: props.isActive ? 500 : 500,
+    fontWeight: props.isActive ? 700 : 600,
   }),
 );
 
@@ -62,10 +63,13 @@ export default function HeaderTabs({
   selectedTab: string;
   setSelectedTab: Function;
 }) {
+  const router = useRouter();
+
   function onTabClick(value) {
     return function (event) {
       event.preventDefault();
       setSelectedTab(value);
+      router.push(`/${value}`);
     };
   }
 

@@ -22,7 +22,7 @@ export default function Header({
       <div
         css={{
           display: 'flex',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           marginBottom: 10,
         }}
       >
@@ -33,7 +33,7 @@ export default function Header({
           rel="noreferrer"
           css={{
             marginLeft: 'auto',
-            fontWeight: 500,
+            fontWeight: 600,
             fontSize: 13,
             background: colors.purple,
             borderRadius: 4,
@@ -47,11 +47,8 @@ export default function Header({
             ':hover': {
               color: colors.brightGreen,
             },
-            [breakpoints.mobile]: {
-              fontSize: 12,
-            },
           }}
-        >{`Email us`}</a>
+        >{`Contact`}</a>
       </div>
       <HeaderTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
     </div>

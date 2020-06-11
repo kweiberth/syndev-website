@@ -128,7 +128,7 @@ html.wf-active body,
 html.wf-active #react-mount,
 html.wf-active button,
 html.wf-active input {
-  font-family: 'Fira Sans', Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', Helvetica-Neue, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -137,7 +137,7 @@ a {
 }
 
 button {
-  font-family: 'Fira Sans', Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', Helvetica-Neue, Helvetica, Arial, sans-serif;
   color: #150752;
   font-weight: 300;
   font-size: 14px;

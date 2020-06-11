@@ -1,5 +1,6 @@
 import Circle from 'components/svgs/circle';
 import { colors } from 'utils/styles';
+import styled from '@emotion/styled';
 
 const expertises = [
   'CMC strategy and leadership',
@@ -17,25 +18,33 @@ const expertises = [
   'cGMPs',
 ];
 
+const Bold = styled.span({
+  fontWeight: 600,
+  color: colors.purple,
+});
+
 export default function SectionExpertise() {
   return (
     <>
       <div
         css={{
           fontSize: 16,
-          fontWeight: 500,
-          color: colors.purple,
-          // marginBottom: 12,
-          // padding: 12,
-          // border: `1px solid ${colors.purple}`,
-          // borderRadius: 4,
+          fontWeight: 600,
+          color: colors.lightPurple,
         }}
       >
-        {`SynDev Technologies is a modern chemistry and biotech thinktank. Founded and led by Franz Weiberth, SynDev provides cutting edge consulting to chemical engineering and biotech companies. Based on 40 years of experience, SynDev specializes in all things synthesis and development, including:`}
+        <Bold>{`SynDev Technologies`}</Bold>
+        <span>{` is a modern chemistry and biotech thinktank. Founded and led by `}</span>
+        <Bold>{`Franz Weiberth`}</Bold>
+        <span>{`, SynDev provides cutting edge `}</span>
+        <Bold>{`consulting to chemical engineering and biotech companies`}</Bold>
+        <span>{`. Based on 40 years of experience, SynDev specializes in all things synthesis and development, including:`}</span>
       </div>
       <div
         css={{
           padding: 12,
+          paddingLeft: 6,
+          fontWeight: 500,
           '> div': {
             marginBottom: 4,
           },

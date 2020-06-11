@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import { colors, breakpoints, maxPageWidth } from 'utils/styles';
 
-const imgWidth = 64;
-const imgWidthMobile = 52;
+const imgWidth = 68;
+const imgWidthMobile = 56;
 
 const ImageWrapperWithBorder = styled.div({
   border: `2px solid ${colors.purple}`,
@@ -46,15 +46,12 @@ export default function Footer() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          '> *': {
-            marginBottom: 2,
-          },
         }}
       >
         <div
           css={{
             fontSize: 18,
-            fontWeight: 500,
+            fontWeight: 600,
             [breakpoints.mobile]: {
               fontSize: 16,
             },
@@ -62,20 +59,24 @@ export default function Footer() {
         >{`Franz J. Weiberth, Ph.D.`}</div>
         <div
           css={{
-            fontSize: 14,
+            fontWeight: 600,
+            color: colors.lightPurple,
+            marginBottom: 3,
+            fontSize: 15,
             [breakpoints.mobile]: {
-              fontSize: 13,
+              fontSize: 14,
+              marginBottom: 1,
             },
           }}
-        >{`Founder and CEO`}</div>
+        >{`SynDev Founder and CEO`}</div>
         <div
           css={{
             display: 'flex',
-            color: colors.brightGreen,
+            color: colors.green,
             textDecoration: 'underline',
-            fontSize: 13,
+            fontSize: 14,
             [breakpoints.mobile]: {
-              fontSize: 12,
+              fontSize: 13,
             },
 
             fontWeight: 500,

@@ -13,7 +13,7 @@ export default function App({
     import('webfontloader').then((Webfont) =>
       Webfont.load({
         google: {
-          families: ['Fira Sans:400,500,600,700'],
+          families: ['Barlow:400,500,600,700'],
         },
       }),
     );
