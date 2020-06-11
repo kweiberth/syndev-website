@@ -2,10 +2,10 @@ import styled from '@emotion/styled';
 import { colors, breakpoints, maxPageWidth } from 'utils/styles';
 
 const imgWidth = 68;
-const imgWidthMobile = 56;
+const imgWidthMobile = 60;
 
 const ImageWrapperWithBorder = styled.div({
-  border: `2px solid ${colors.purple}`,
+  border: `2px solid ${colors.brightGreen}`,
   borderRadius: 9999,
   display: 'flex',
   alignItems: 'center',
@@ -68,11 +68,13 @@ export default function Footer() {
               marginBottom: 1,
             },
           }}
-        >{`SynDev Founder and CEO`}</div>
+        >
+          {`Founder and CEO`}
+        </div>
         <div
           css={{
             display: 'flex',
-            color: colors.green,
+            color: colors.purple,
             textDecoration: 'underline',
             fontSize: 14,
             [breakpoints.mobile]: {

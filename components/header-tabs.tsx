@@ -24,7 +24,7 @@ const Filter = styled.button({
   },
 
   '&:focus > div': {
-    borderBottom: `2px solid ${colors.green}`,
+    borderBottom: `2px solid ${colors.brightGreen}`,
   },
 });
 
@@ -43,7 +43,7 @@ const FilterText = styled.div(
   (props: any) => ({
     color: props.isActive ? colors.purple : colors.lightPurple,
     borderBottom: props.isActive
-      ? `2px solid ${colors.green}`
+      ? `2px solid ${colors.brightGreen}`
       : `2px solid ${colors.transparent}`,
     fontWeight: props.isActive ? 700 : 600,
   }),

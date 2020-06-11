@@ -28,7 +28,7 @@ export default function SectionExpertise() {
     <>
       <div
         css={{
-          fontSize: 16,
+          fontSize: 17,
           fontWeight: 600,
           color: colors.lightPurple,
         }}
@@ -57,7 +57,7 @@ export default function SectionExpertise() {
           <div
             key={`expertise-${i}`}
             css={{
-              fontSize: 16,
+              fontSize: 17,
             }}
           >
             <span
@@ -69,7 +69,7 @@ export default function SectionExpertise() {
                 },
               }}
             >
-              <Circle color={colors.green} height={6} />
+              <Circle color={colors.brightGreen} height={6} />
             </span>
             {expertise}
           </div>

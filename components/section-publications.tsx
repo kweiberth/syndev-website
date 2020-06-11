@@ -6,7 +6,7 @@ export default function SectionPublications() {
         fontSize: 16,
       }}
     >
-      {`Coming soon. (The list, not the publications).`}
+      {`Coming soon. (The list, not the publications) 😅`}
     </div>
   );
 }
