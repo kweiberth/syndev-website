@@ -61,7 +61,7 @@ export default function Footer() {
           css={{
             fontWeight: 600,
             color: colors.lightPurple,
-            marginBottom: 3,
+            marginBottom: 2,
             fontSize: 15,
             [breakpoints.mobile]: {
               fontSize: 14,
@@ -76,12 +76,11 @@ export default function Footer() {
             display: 'flex',
             color: colors.purple,
             textDecoration: 'underline',
+            fontWeight: 500,
             fontSize: 14,
             [breakpoints.mobile]: {
               fontSize: 13,
             },
-
-            fontWeight: 500,
             '> *': { marginRight: 6 },
           }}
         >

@@ -22,20 +22,6 @@ const StickyFooter = styled.div(
   }),
 );
 
-const StickyHeader = styled.div(
-  {
-    top: 0,
-    left: 0,
-    right: 0,
-    background: colors.white,
-    borderBottom: `1px solid ${colors.grey}`,
-  },
-  (props: any) => ({
-    position: props.position || 'fixed',
-    visibility: props.visibility || 'visible',
-  }),
-);
-
 const Section = styled.div({
   paddingLeft: 4,
   maxWidth: maxPageWidth,
@@ -68,12 +54,7 @@ export default function MainPage({
         }}
       >
         <div css={{ flex: '1 0' }}>
-          <StickyHeader>
-            <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-          </StickyHeader>
-          <StickyHeader visibility="hidden" position="static">
-            <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-          </StickyHeader>
+          <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
 
           <Section>
             <SectionToRender />

@@ -36,9 +36,11 @@ export default function SectionExpertise() {
         <Bold>{`SynDev Technologies`}</Bold>
         <span>{` is a modern chemistry and biotech thinktank. Founded and led by `}</span>
         <Bold>{`Franz Weiberth`}</Bold>
-        <span>{`, SynDev provides cutting edge `}</span>
-        <Bold>{`consulting to chemical engineering and biotech companies`}</Bold>
-        <span>{`. Based on 40 years of experience, SynDev specializes in all things synthesis and development, including:`}</span>
+        <span>{`, SynDev provides `}</span>
+        <Bold>{`cutting edge consulting`}</Bold>
+        <span>{` to chemical engineering and biotech companies and scientists. Based on 40 years of experience, SynDev specializes in `}</span>
+        <Bold>{`all things synthesis, development and management`}</Bold>
+        <span>{`, including:`}</span>
       </div>
       <div
         css={{
@@ -65,11 +67,11 @@ export default function SectionExpertise() {
                 height: '100%',
                 marginRight: 6,
                 '> svg': {
-                  marginBottom: 2,
+                  marginBottom: 3,
                 },
               }}
             >
-              <Circle color={colors.brightGreen} height={6} />
+              <Circle color={colors.brightGreen} height={5} />
             </span>
             {expertise}
           </div>
