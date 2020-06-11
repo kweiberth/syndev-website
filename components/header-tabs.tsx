@@ -2,10 +2,7 @@ import styled from '@emotion/styled';
 import { colors, breakpoints } from '../utils/styles';
 
 const Filters = styled.div({
-  // padding: '0 12px',
   width: '100%',
-  // maxWidth: 600,
-  // margin: 'auto',
 
   '> button': {
     marginLeft: 16,
@@ -17,7 +14,7 @@ const Filters = styled.div({
 });
 
 const Filter = styled.button({
-  height: 36,
+  height: 32,
 
   '&:focus': {
     outline: 'none',
@@ -26,7 +23,7 @@ const Filter = styled.button({
   },
 
   '&:focus > div': {
-    borderBottom: `2px solid ${colors.black}`,
+    borderBottom: `2px solid ${colors.green}`,
   },
 });
 
@@ -43,9 +40,9 @@ const FilterText = styled.div(
     },
   },
   (props: any) => ({
-    color: props.isActive ? colors.purple : colors.green,
+    color: props.isActive ? colors.purple : colors.lightPurple,
     borderBottom: props.isActive
-      ? `2px solid ${colors.black}`
+      ? `2px solid ${colors.green}`
       : `2px solid ${colors.transparent}`,
     fontWeight: props.isActive ? 500 : 500,
   }),
@@ -58,7 +55,13 @@ const tabs = [
   { value: 'blog', displayName: 'Blog' },
 ];
 
-export default function HeaderTabs({ selectedTab, setSelectedTab }) {
+export default function HeaderTabs({
+  selectedTab,
+  setSelectedTab,
+}: {
+  selectedTab: string;
+  setSelectedTab: Function;
+}) {
   function onTabClick(value) {
     return function (event) {
       event.preventDefault();

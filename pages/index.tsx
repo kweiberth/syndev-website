@@ -1,27 +1,10 @@
 import { useState } from 'react';
-import Head from 'next/head';
 import styled from '@emotion/styled';
 import { colors, maxPageWidth } from 'utils/styles';
-import HexagonSolidIcon from 'components/svgs/hexagon-solid-icon';
 import Footer from 'components/footer';
 import Header from 'components/header';
-import Highlights from 'components/highlights';
-
-const competencies = [
-  'CMC strategy and leadership',
-  'Project progression, early development to clinic',
-  'Drugability assessments',
-  'Organic chemistry',
-  'Route scouting and optimization',
-  'Multi-step synthesis development',
-  'Process chemistry and scale up',
-  'Strategic sourcing',
-  'Analytics',
-  'Physical quality',
-  'Technology transfer',
-  'Due Diligence',
-  'cGMPs',
-];
+import SectionExpertise from 'components/section-expertise';
+import SectionHighlights from 'components/section-highlights';
 
 const StickyFooter = styled.div(
   {
@@ -51,15 +34,29 @@ const StickyHeader = styled.div(
   }),
 );
 
+const Section = styled.div({
+  paddingLeft: 4,
+  maxWidth: maxPageWidth,
+  margin: 'auto',
+  padding: 12,
+  paddingBottom: 24,
+});
+
+const sections = [
+  {
+    tab: 'expertise',
+    component: SectionExpertise,
+  },
+  {
+    tab: 'highlights',
+    component: SectionHighlights,
+  },
+];
+
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState('expertise');
   return (
     <>
-      <Head>
-        <title>SynDev Technologies</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div
         css={{
           height: '100vh',
@@ -75,43 +72,14 @@ export default function Home() {
             <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
           </StickyHeader>
 
-          <div
-            css={{
-              paddingLeft: 4,
-              maxWidth: maxPageWidth,
-              margin: 'auto',
-              padding: 12,
-              '> div': {
-                marginBottom: 6,
-              },
-              '> div:last-of-type': {
-                marginBottom: 0,
-              },
-            }}
-          >
-            {competencies.map((competency, i) => (
-              <div
-                key={`competency-${i}`}
-                css={{
-                  fontSize: 17,
-                }}
-              >
-                <span
-                  css={{
-                    height: '100%',
-                    marginRight: 4,
-                    '> svg': {
-                      marginBottom: 0,
-                    },
-                  }}
-                >
-                  <HexagonSolidIcon color={colors.green} height={12} />
-                </span>
-                {competency}
-              </div>
-            ))}
-          </div>
-          <Highlights />
+          <Section>
+            {sections.map(({ tab, component: Component }) => {
+              if (tab === selectedTab) {
+                return <Component />;
+              }
+              return null;
+            })}
+          </Section>
         </div>
         <StickyFooter>
           <Footer />

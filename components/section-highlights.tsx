@@ -1,12 +1,9 @@
-import { boxShadow, maxPageWidth } from 'utils/styles';
-export default function Publications() {
+import { boxShadow } from 'utils/styles';
+
+export default function SectionHighlights() {
   return (
     <div
       css={{
-        maxWidth: maxPageWidth,
-        margin: 'auto',
-        padding: 12,
-        paddingBottom: 24,
         '> a': { marginBottom: 12 },
         '> a:last-of-type': { marginBottom: 0 },
       }}

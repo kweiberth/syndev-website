@@ -71,7 +71,7 @@ export default function Footer() {
         <div
           css={{
             display: 'flex',
-            color: colors.green,
+            color: colors.brightGreen,
             textDecoration: 'underline',
             fontSize: 13,
             [breakpoints.mobile]: {

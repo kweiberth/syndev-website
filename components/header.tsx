@@ -1,8 +1,15 @@
-import { maxPageWidth, colors, breakpoints } from 'utils/styles';
-import SynDevIcon from 'components/svgs/syndev-icon';
+import { maxPageWidth, colors, breakpoints, boxShadow } from 'utils/styles';
+import SynDevLogo from 'components/svgs/syndev-logo-horizontal';
+// import SynDevLogo from 'components/svgs/syndev-logo';
 import HeaderTabs from 'components/header-tabs';
 
-export default function Header({ selectedTab, setSelectedTab }) {
+export default function Header({
+  selectedTab,
+  setSelectedTab,
+}: {
+  selectedTab: string;
+  setSelectedTab: Function;
+}) {
   return (
     <div
       css={{
@@ -15,20 +22,11 @@ export default function Header({ selectedTab, setSelectedTab }) {
       <div
         css={{
           display: 'flex',
-          alignItems: 'center',
-          marginBottom: 6,
+          alignItems: 'flex-start',
+          marginBottom: 10,
         }}
       >
-        <SynDevIcon height={32} />
-        <div
-          css={{
-            fontSize: 17,
-            fontWeight: 700,
-            marginBottom: 2,
-            color: colors.green,
-            marginLeft: 8,
-          }}
-        >{`SynDev Technologies`}</div>
+        <SynDevLogo height={42} />
         <a
           href="mailto:franz.weiberth@syndev.co"
           target="_blank"
@@ -37,23 +35,23 @@ export default function Header({ selectedTab, setSelectedTab }) {
             marginLeft: 'auto',
             fontWeight: 500,
             fontSize: 13,
-            background: colors.white,
-            borderRadius: 3,
-            color: colors.purple,
+            background: colors.purple,
+            borderRadius: 4,
+            color: colors.white,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             cursor: 'pointer',
             padding: '6px 12px',
-            border: `1px solid ${colors.purple}`,
+            boxShadow,
             ':hover': {
-              background: colors.greenTranslucent,
+              color: colors.brightGreen,
             },
             [breakpoints.mobile]: {
               fontSize: 12,
             },
           }}
-        >{`Email`}</a>
+        >{`Email us`}</a>
       </div>
       <HeaderTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
     </div>
