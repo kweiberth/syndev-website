@@ -1,6 +1,5 @@
-import { maxPageWidth, colors, breakpoints, boxShadow } from 'utils/styles';
+import { maxPageWidth, colors, boxShadow } from 'utils/styles';
 import SynDevLogo from 'components/svgs/syndev-logo-horizontal';
-// import SynDevLogo from 'components/svgs/syndev-logo';
 import HeaderTabs from 'components/header-tabs';
 
 export default function Header({

@@ -1,3 +1,3 @@
 module.exports = {
-  '*.(js|ts)': ['prettier --write', 'npm run lint'],
+  '*.(js|ts|tsx)': ['prettier --write', 'npm run lint'],
 };
