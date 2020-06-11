@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 const Wrapper = styled.div({
   width: '100%',
   overflow: 'hidden',
-  maxWidth: maxPageWidth,
-  margin: 'auto',
   background: colors.white,
   borderBottom: `1px solid ${colors.grey}`,
 });
@@ -19,6 +17,8 @@ const WrapperForFade = styled.div({
 });
 
 const Filters = styled.div({
+  maxWidth: maxPageWidth,
+  margin: 'auto',
   display: 'flex',
   alignItems: 'center',
   overflow: 'hidden',

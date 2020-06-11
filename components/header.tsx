@@ -54,19 +54,15 @@ export default function Header({
   }, []);
 
   return (
-    <div
-      ref={headerRef}
-      css={{
-        maxWidth: maxPageWidth,
-        margin: 'auto',
-      }}
-    >
+    <div ref={headerRef}>
       <div
         css={{
           display: 'flex',
           alignItems: 'center',
           padding,
           paddingBottom: 0,
+          maxWidth: maxPageWidth,
+          margin: 'auto',
         }}
       >
         <a href="/" css={{ display: 'block' }}>
