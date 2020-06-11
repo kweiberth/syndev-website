@@ -14,18 +14,20 @@ export default function Header({
       css={{
         maxWidth: maxPageWidth,
         margin: 'auto',
-        padding: 12,
-        paddingBottom: 0,
       }}
     >
       <div
         css={{
           display: 'flex',
           alignItems: 'center',
-          marginBottom: 10,
+          marginBottom: 6,
+          padding: 12,
+          paddingBottom: 0,
         }}
       >
-        <SynDevLogo height={42} />
+        <a href="/" css={{ display: 'block' }}>
+          <SynDevLogo height={42} />
+        </a>
         <a
           href="mailto:franz.weiberth@syndev.co"
           target="_blank"

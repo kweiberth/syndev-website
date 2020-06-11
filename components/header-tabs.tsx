@@ -1,17 +1,52 @@
 import styled from '@emotion/styled';
-import { colors, breakpoints } from '../utils/styles';
+import { colors, breakpoints, maxPageWidth } from '../utils/styles';
 import { useRouter } from 'next/router';
 
 const Filters = styled.div({
+  display: 'flex',
+  alignItems: 'center',
+  overflow: 'hidden',
+  flex: '1 1 auto',
+  overflowX: 'scroll',
+  scrollBehavior: 'smooth',
+  WebkitOverflowScrolling: 'touch',
+  height: '100%',
   width: '100%',
+  paddingLeft: 12,
+  // marginRight: 24,
+
+  '&::-webkit-scrollbar': { width: 0, height: 0 }, // Chrome, Safari, Opera, etc.
+  msOverflowStyle: 'none', // IE 10+
+  scrollbarWidth: 'none', // Firefox
 
   '> button': {
-    marginLeft: 16,
+    marginRight: 16,
   },
 
-  '> button:first-of-type': {
-    marginLeft: 0,
+  '> button:last-of-type': {
+    marginRight: 0,
+    paddingRight: 24,
   },
+});
+
+const WrapperForFades = styled.div({
+  height: '100%',
+  width: '100%',
+  overflow: 'hidden',
+  maxWidth: maxPageWidth,
+  margin: 'auto',
+
+  // for <Fade* /> components
+  position: 'relative',
+});
+
+const FadeRight = styled.div({
+  position: 'absolute',
+  width: 30,
+  right: 0,
+  top: 0,
+  bottom: 0,
+  background: `linear-gradient(270deg, ${colors.white} 20%, ${colors.transparent} 100%)`,
 });
 
 const Filter = styled.button({
@@ -74,19 +109,22 @@ export default function HeaderTabs({
   }
 
   return (
-    <Filters>
-      {tabs.map(({ value, displayName }) => (
-        <Filter
-          key={value}
-          onClick={onTabClick(value)}
-          type="button"
-          aria-label={`View ${displayName.toLowerCase()}`}
-        >
-          <FilterText isActive={selectedTab === value}>
-            {displayName.toUpperCase()}
-          </FilterText>
-        </Filter>
-      ))}
-    </Filters>
+    <WrapperForFades>
+      <Filters>
+        {tabs.map(({ value, displayName }) => (
+          <Filter
+            key={value}
+            onClick={onTabClick(value)}
+            type="button"
+            aria-label={`View ${displayName.toLowerCase()}`}
+          >
+            <FilterText isActive={selectedTab === value}>
+              {displayName.toUpperCase()}
+            </FilterText>
+          </Filter>
+        ))}
+      </Filters>
+      <FadeRight />
+    </WrapperForFades>
   );
 }
