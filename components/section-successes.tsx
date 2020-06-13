@@ -7,27 +7,27 @@ const successes = [
     content:
       'Developed and implemented multi-pronged approaches to accelerate timelines while maintaining quality and successful outcomes, including:',
     bullets: [
-      'Working closely with Medicinal Chemistry to anticipate early supplies of study batches of drug substances',
-      'Developing scenarios for strategies for early scale up while balancing at-risk sourcing and budgeting',
-      'Identifying activities that could be performed in parallel',
-      'Managing internal, external, global headcounts',
-      'Building teamwork and coordinating functions within a global organization to assess drugability, define and prioritize CMC activities, achieve buy-in with upper management, and then execute the planning to advance molecules (co-authored Chapter 33 on drug development in <i>The Practice of Medicinal Chemistry</i>; Elsevier Science: Boston, 2015; pp 793-803)',
+      'Working closely with Medicinal Chemistry to anticipate early supplies of study batches of emerging leads',
+      'Developing scenarios for strategies for early scale up while balancing at-risk sourcing and budget constraints',
+      'Identifying activities that could be simplified or performed in parallel',
+      'Managing internal and external headcounts',
+      'Building teamwork and coordinating functions within a global organization to assess drugability, define and prioritize CMC activities, achieve buy-in with upper management, and then execute the planning to advance lead molecules (co-authored Chapter 33 on drug development in <i>The Practice of Medicinal Chemistry</i>; Elsevier Science: Boston, 2015; pp 793-803)',
     ],
   },
   {
     heading: 'CMC Leadership',
     content:
-      'Coordinated multi-disciplinary teams, including, chemistry, analytics, physical quality, formulations, sourcing, supply chain functions, to align activities with project teams and to drive the advancement of small molecules in development.',
+      'Coordinated multi-disciplinary teams, including, chemistry, analytics, physical quality, formulations, sourcing, supply chain functions, to align activities with project team objectives and to drive the advancement of small molecules in development.',
   },
   {
     heading: 'Lab leadership',
     content:
-      'Managed BS/MS/PhD chemists engaged in chemical design, optimization and development of safe, robust, cost effective and potentially industrializable chemical processes.',
+      'Directed BS/MS/PhD chemists engaged in chemical design, optimization and development of safe, robust, cost effective and potentially industrializable chemical processes.',
   },
   {
     heading: 'Cost of goods (CoG)',
     content:
-      'Led teams that brainstormed and designed novel alternative and stereoselective routes for the synthesis of many building blocks and drug substances to enable cost-effective manufacturing (e.g. <i>Synthesis&nbsp;</i> <b>2017</b>, <i>49</i>, 4133; <i>OPRD&nbsp;</i> <b>2015</b>, <i>19</i>, 806; <i>OPRD&nbsp;</i> <b>2012</b>, <i>16</i>, 1967; <i>OPRD&nbsp;</i> <b>2010</b>, <i>14</i>, 623).',
+      'Led teams that brainstormed and designed novel alternative and stereoselective routes for the synthesis of many building blocks and drug substances to enable cost-effective manufacturing (e.g., <i>Synthesis&nbsp;</i> <b>2017</b>, <i>49</i>, 4133; <i>OPRD&nbsp;</i> <b>2015</b>, <i>19</i>, 806; <i>OPRD&nbsp;</i> <b>2012</b>, <i>16</i>, 1967; <i>OPRD&nbsp;</i> <b>2010</b>, <i>14</i>, 623).',
   },
   {
     heading: 'Reaction screening',
@@ -37,7 +37,7 @@ const successes = [
   {
     heading: 'Flow innovation',
     content:
-      'Designed a portable Coriolis mass flow metering and pumping system that provided precise dispensing of two reagent streams simultaneously and proportionally that was critical to the efficient N-amination of a variety of indoles required to synthesis a series of drug substance I development (<i>OPRD&nbsp;</i> <b>2011</b>, <i>15</i>, 704).',
+      'Designed a portable Coriolis mass flow metering and pumping system that provided precise dispensing of two reagent streams simultaneously and proportionally that was critical to the efficient <i>N</i>-amination of a variety of related leads in development (<i>OPRD&nbsp;</i> <b>2011</b>, <i>15</i>, 704).',
   },
   {
     heading: 'Technology transfer',
@@ -47,17 +47,17 @@ const successes = [
   {
     heading: 'Transformation',
     content:
-      'Involved in rebuilding organizations, ways of working and morale after mergers or corporate reorganizations have occurred.',
+      'Experienced in rebuilding organizations, ways of working and morale after mergers or corporate reorganizations have occurred.',
   },
   {
     heading: 'Lab GMPs',
     content:
-      'Developed standard procedures and operational philosophies for the GMP synthesis, up to final intermediates, of drug substances in a laboratory environment in coordination and approval by corporate Regulatory and Quality functions.',
+      'Developed standard procedures and operational philosophies for the GMP synthesis, up to final intermediates, of drug substances in a laboratory environment in coordination with Regulatory and Quality functions.',
   },
   {
     heading: 'GMP Pilot Plant',
     content:
-      'Managed research kilo lab (12-22 L) and GMP pilot plant (40 – 600 L reactors; 11,000 ft2 plant) for 14 years that synthesized drug substance supplies to support IND toxicological studies and Phase 1 clinical trials; supervised, trained, and coordinated the efforts of a staff.',
+      'Managed research kilo lab (12-22 L) and GMP pilot plant (40 – 600 L reactors; 11,000 ft<sup>2</sup> plant) for 14 years that synthesized drug substance supplies to support IND toxicological studies and Phase 1 clinical trials.',
   },
   {
     heading: 'HSE leadership',
@@ -129,7 +129,10 @@ export default function SectionSuccesses() {
                 </div>
               </div>
               <div
-                css={{ '> b': { fontWeight: 600 } }}
+                css={{
+                  '> b': { fontWeight: 600 },
+                  '> sup': { fontSize: 10 },
+                }}
                 dangerouslySetInnerHTML={{ __html: content }}
               />
               {bullets.length ? (
