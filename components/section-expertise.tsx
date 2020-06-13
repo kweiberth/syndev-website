@@ -14,7 +14,7 @@ const expertises = [
   'Analytics',
   'Physical quality',
   'Technology transfer',
-  'Due Diligence',
+  'Due diligence',
   'cGMPs',
 ];
 

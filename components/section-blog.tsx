@@ -6,7 +6,7 @@ export default function SectionBlog() {
         fontSize: 16,
       }}
     >
-      {`Stories and lessons learned from 40+ years in the industry. Coming soon.`}
+      {`Stories and lessons learned from 30+ years in the industry. Coming soon.`}
     </div>
   );
 }

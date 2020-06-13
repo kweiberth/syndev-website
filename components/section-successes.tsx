@@ -5,7 +5,7 @@ const successes = [
   {
     heading: 'Accelerated timelines',
     content:
-      'Developed and implemented multi-pronged approaches to accelerate timelines without disrupting quality or successful outcomes, including:',
+      'Developed and implemented multi-pronged approaches to accelerate timelines while maintaining quality and successful outcomes, including:',
     bullets: [
       'Working closely with Medicinal Chemistry to anticipate early supplies of study batches of drug substances',
       'Developing scenarios for strategies for early scale up while balancing at-risk sourcing and budgeting',
@@ -70,7 +70,7 @@ const successes = [
       'Designed only known sampling devise that enables the removal of one-drop sample from a batch reactor from a reaction that is under reflux without compromising a nitrogen blanket (U.S. Pat. 5747708).',
   },
   {
-    heading: 'Due Diligences',
+    heading: 'Due diligences',
     content:
       'Provided CMC and chemistry expertise on many external opportunities.',
   },
