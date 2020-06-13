@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors, breakpoints, maxPageWidth } from 'utils/styles';
+import { colors, breakpoints, maxPageWidth, boxShadow } from 'utils/styles';
 
 const imgWidth = 68;
 const imgWidthMobile = 60;
@@ -12,6 +12,7 @@ const ImageWrapperWithBorder = styled.div({
   justifyContent: 'center',
   marginRight: 16,
   padding: 2,
+  boxShadow,
 });
 
 export default function Footer() {
