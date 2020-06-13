@@ -5,7 +5,7 @@ const imgWidth = 68;
 const imgWidthMobile = 60;
 
 const ImageWrapperWithBorder = styled.div({
-  border: `2px solid ${colors.brightGreen}`,
+  border: `2px solid ${colors.green}`,
   borderRadius: 9999,
   display: 'flex',
   alignItems: 'center',

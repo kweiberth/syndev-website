@@ -1,9 +1,9 @@
 import Circle from 'components/svgs/circle';
-import { colors } from 'utils/styles';
+import { colors, breakpoints } from 'utils/styles';
 import styled from '@emotion/styled';
 
 const expertises = [
-  'CMC strategy and leadership',
+  'CMC strategy and coordination',
   'Project progression, early development to clinic',
   'Drugability assessments',
   'Organic chemistry',
@@ -28,24 +28,26 @@ export default function SectionExpertise() {
     <>
       <div
         css={{
-          fontSize: 17,
+          fontSize: 20,
           fontWeight: 600,
           color: colors.lightPurple,
+          [breakpoints.mobile]: {
+            fontSize: 18,
+          },
         }}
       >
-        <Bold>{`SynDev Technologies`}</Bold>
-        <span>{` is a modern chemistry and biotech thinktank. Founded and led by `}</span>
+        <span>{`Founded and led by `}</span>
         <Bold>{`Franz Weiberth`}</Bold>
-        <span>{`, SynDev provides `}</span>
+        <span>{`, SynDev Technologies provides `}</span>
         <Bold>{`cutting edge consulting`}</Bold>
-        <span>{` to chemical engineering and biotech companies and scientists. Based on 40 years of experience, SynDev specializes in `}</span>
-        <Bold>{`all things synthesis, development and management`}</Bold>
+        <span>{` in the synthesis and progression of pharmacologically active new small molecules from lab to clinic to commercial manufacturing. Based on 30+ years of experience and innovation, SynDev specializes in `}</span>
+        <Bold>{`all things synthesis and development`}</Bold>
         <span>{`, including:`}</span>
       </div>
       <div
         css={{
           padding: 12,
-          paddingLeft: 6,
+          paddingBottom: 0,
           fontWeight: 500,
           '> div': {
             marginBottom: 4,
@@ -59,21 +61,24 @@ export default function SectionExpertise() {
           <div
             key={`expertise-${i}`}
             css={{
-              fontSize: 17,
+              fontSize: 18,
+              [breakpoints.mobile]: {
+                fontSize: 17,
+              },
+              display: 'flex',
             }}
           >
-            <span
+            <div
               css={{
-                height: '100%',
-                marginRight: 6,
+                marginRight: 8,
                 '> svg': {
-                  marginBottom: 3,
+                  marginBottom: 2,
                 },
               }}
             >
-              <Circle color={colors.brightGreen} height={5} />
-            </span>
-            {expertise}
+              <Circle color={colors.green} height={8} />
+            </div>
+            <div>{expertise}</div>
           </div>
         ))}
       </div>

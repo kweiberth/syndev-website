@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors, breakpoints, maxPageWidth } from '../utils/styles';
+import { colors, maxPageWidth } from '../utils/styles';
 import { useRouter } from 'next/router';
 
 const Wrapper = styled.div({
@@ -66,7 +66,7 @@ const Filter = styled.button({
   },
 
   '&:focus > div': {
-    borderBottom: `2px solid ${colors.brightGreen}`,
+    borderBottom: `2px solid ${colors.green}`,
   },
 });
 
@@ -78,14 +78,11 @@ const FilterText = styled.div(
     height: '100%',
     fontSize: 14,
     fontWeight: 700,
-    [breakpoints.mobile]: {
-      fontSize: 13,
-    },
   },
   (props: any) => ({
     color: props.isActive ? colors.purple : colors.lightPurple,
     borderBottom: props.isActive
-      ? `2px solid ${colors.brightGreen}`
+      ? `2px solid ${colors.green}`
       : `2px solid ${colors.transparent}`,
     fontWeight: props.isActive ? 700 : 600,
   }),
@@ -93,8 +90,8 @@ const FilterText = styled.div(
 
 const tabs = [
   { value: 'expertise', displayName: 'Expertise' },
+  { value: 'successes', displayName: 'Successes' },
   { value: 'publications', displayName: 'Publications' },
-  { value: 'highlights', displayName: 'Highlights' },
   { value: 'blog', displayName: 'Blog' },
 ];
 
@@ -111,7 +108,7 @@ export default function HeaderTabs({
     return function (event) {
       event.preventDefault();
       setSelectedTab(value);
-      router.replace(`/${value}`);
+      router.replace(`/${value}`, undefined, { shallow: true });
     };
   }
 

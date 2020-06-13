@@ -1,6 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
-import { maxPageWidth, colors, boxShadow } from 'utils/styles';
-import SynDevLogo from 'components/svgs/syndev-logo-horizontal';
+import {
+  maxPageWidth,
+  colors,
+  boxShadow,
+  boxShadowHovered,
+} from 'utils/styles';
+import SynDevLogo from 'components/svgs/syndev-logo';
 import HeaderTabs from 'components/header-tabs';
 import styled from '@emotion/styled';
 
@@ -76,17 +81,20 @@ export default function Header({
             marginLeft: 'auto',
             fontWeight: 600,
             fontSize: 13,
-            background: colors.purple,
+            background: colors.green,
             borderRadius: 4,
-            color: colors.white,
+            color: colors.purple,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             cursor: 'pointer',
             padding: '6px 12px',
+            border: `1px solid ${colors.purple}`,
             marginBottom: 4,
+            transition: 'box-shadow 100ms ease-in, transform 150ms ease-in',
             ':hover': {
-              color: colors.brightGreen,
+              boxShadow: boxShadowHovered,
+              transform: 'translateY(-1px)',
             },
 
             // When the tabs are below this button we need to increase the

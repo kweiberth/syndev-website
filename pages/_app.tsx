@@ -23,6 +23,10 @@ export default function App({
     <>
       <Head>
         <title>{`SynDev Technologies`}</title>
+        <meta
+          name="description"
+          content="SynDev Technologies provides consulting in the synthesis and progression of pharmacologically active new small molecules from lab to clinic to commercial manufacturing."
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

@@ -4,8 +4,8 @@ import { colors, maxPageWidth } from 'utils/styles';
 import Footer from 'components/footer';
 import Header from 'components/header';
 import SectionExpertise from 'components/section-expertise';
+import SectionSuccesses from 'components/section-successes';
 import SectionPublications from 'components/section-publications';
-import SectionHighlights from 'components/section-highlights';
 import SectionBlog from 'components/section-blog';
 
 const StickyFooter = styled.div(
@@ -27,13 +27,14 @@ const Section = styled.div({
   maxWidth: maxPageWidth,
   margin: 'auto',
   padding: 12,
-  paddingBottom: 24,
+  paddingTop: 18,
+  paddingBottom: 36,
 });
 
 const sectionsByTab = {
   expertise: SectionExpertise,
+  successes: SectionSuccesses,
   publications: SectionPublications,
-  highlights: SectionHighlights,
   blog: SectionBlog,
 };
 
@@ -55,7 +56,6 @@ export default function MainPage({
       >
         <div css={{ flex: '1 0' }}>
           <Header selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-
           <Section>
             <SectionToRender />
           </Section>
