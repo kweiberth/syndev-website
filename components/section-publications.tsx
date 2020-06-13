@@ -32,11 +32,11 @@ const publications = [
   `Weiberth, F. J.; Lee, T. B. K. "Universal Reactor System Expedites Process Scale-Up" <i>Chem. Process.&nbsp;</i> <b>1990</b>, <i>53(6)</i>, 95-97.`,
   `Weiberth, F. J.; Lee, T. B. K. "Steam Injection Heating System Improves Temperature Control and Drying Efficiency of Conical Dryer" <i>Chem. Process.&nbsp;</i> <b>1988</b>, <i>51(10)</i>, 62-63.`,
   `Weiberth, F. J.; Lee, T. B. K. "Jacketed Vessel on a Portable Stand Finds use in a Variety of Pharmaceutical Operations" <i>Chem. Process.&nbsp;</i> <b>1988</b>, <i>51(5)</i>, 142-143.`,
-  `Weiberth, F. J.; Hall, S. S. "Copper(I)-Activated Addition of Grignard Reagents to Nitriles.  Synthesis of Ketimines, Ketones, and Amines" <b>J. Org. Chem.&nbsp;</i> <b>1987</b>, <i>52</i>, 3901-3904.`,
+  `Weiberth, F. J.; Hall, S. S. "Copper(I)-Activated Addition of Grignard Reagents to Nitriles.  Synthesis of Ketimines, Ketones, and Amines" <i>J. Org. Chem.&nbsp;</i> <b>1987</b>, <i>52</i>, 3901-3904.`,
   `Weiberth, F. J.; Hall, S. S. "Tandem Alkylation-Reduction of Nitriles.  Synthesis of Branched Primary Amines" <i>J. Org. Chem.&nbsp;</i> <b>1986</b>, <i>51</i>, 5338-5341.`,
   `Lee, T. B. K.; Weiberth, F. J. "An Economical and Space Efficient Solution to Solvent Recovery" <i>Chem. Process.&nbsp;</i> <b>1985</b>, <i>48(11)</i>, 81.`,
   `Weiberth, F. J.; Hall, S. S. "Tandem Alkylation-Reduction. Highly Stereoselective Synthesis of (<i>E</i>)-1-Hydroxymethyl Methyl Propenyl Ethers from Aldehydes Using 1-Lithio-1-Methoxyallene" <i>J. Org. Chem.&nbsp;</i> <b>1985</b>, <i>50</i>, 5308-5314.`,
-  `Ranus, W.; Loewenstein, R.; Weiberth, F.; Zirlis, J.; Bugbee, H. "Carboxylation of Metal Aryloxides" Eur. Pat. Appl. EP 102833, 1984; <u>Chem. Abstr. 1984</u>, <u>101</u>, 72430a.`,
+  `Ranus, W.; Loewenstein, R.; Weiberth, F.; Zirlis, J.; Bugbee, H. "Carboxylation of Metal Aryloxides" Eur. Pat. Appl. EP 102833, 1984; <u>Chem. Abstr.</u> 1984, <u>101</u>, 72430a.`,
 ];
 
 export default function SectionPublications() {
