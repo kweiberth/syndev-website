@@ -1,6 +1,6 @@
+import styled from '@emotion/styled';
 import Circle from 'components/svgs/circle';
 import { colors, breakpoints } from 'utils/styles';
-import styled from '@emotion/styled';
 
 const expertises = [
   'CMC strategy and coordination',
@@ -32,7 +32,7 @@ export default function SectionExpertise() {
           fontWeight: 600,
           color: colors.lightPurple,
           [breakpoints.mobile]: {
-            fontSize: 18,
+            fontSize: 16,
           },
         }}
       >
@@ -40,7 +40,9 @@ export default function SectionExpertise() {
         <Bold>{`Franz Weiberth`}</Bold>
         <span>{`, SynDev Technologies provides `}</span>
         <Bold>{`cutting edge consulting`}</Bold>
-        <span>{` in the synthesis and progression of pharmacologically active new small molecules from lab to clinic to commercial manufacturing. Based on 30+ years of experience and innovation, SynDev specializes in `}</span>
+        <span>{` in the synthesis and progression of pharmacologically active new small molecules `}</span>
+        <Bold>{`from lab to clinic to commercial manufacturing`}</Bold>
+        <span>{`. Based on 30+ years of experience and innovation, SynDev specializes in `}</span>
         <Bold>{`all things synthesis and development`}</Bold>
         <span>{`, including:`}</span>
       </div>
@@ -63,7 +65,7 @@ export default function SectionExpertise() {
             css={{
               fontSize: 18,
               [breakpoints.mobile]: {
-                fontSize: 17,
+                fontSize: 16,
               },
               display: 'flex',
             }}
@@ -72,11 +74,11 @@ export default function SectionExpertise() {
               css={{
                 marginRight: 8,
                 '> svg': {
-                  marginBottom: 2,
+                  marginBottom: 1,
                 },
               }}
             >
-              <Circle color={colors.green} height={8} />
+              <Circle color={colors.green} height={7} />
             </div>
             <div>{expertise}</div>
           </div>

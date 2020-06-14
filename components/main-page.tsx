@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
 import { colors, maxPageWidth } from 'utils/styles';
-import Footer from 'components/footer';
 import Header from 'components/header';
+import Footer from 'components/footer';
 import SectionExpertise from 'components/section-expertise';
 import SectionSuccesses from 'components/section-successes';
 import SectionPublications from 'components/section-publications';

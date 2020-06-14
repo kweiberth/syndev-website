@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { colors, maxPageWidth } from '../utils/styles';
 import { useRouter } from 'next/router';
+import { colors, maxPageWidth } from '../utils/styles';
 
 const Wrapper = styled.div({
   width: '100%',

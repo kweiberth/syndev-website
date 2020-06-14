@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import styled from '@emotion/styled';
 import {
   maxPageWidth,
   colors,
@@ -7,7 +8,6 @@ import {
 } from 'utils/styles';
 import SynDevLogo from 'components/svgs/syndev-logo';
 import HeaderTabs from 'components/header-tabs';
-import styled from '@emotion/styled';
 
 const logoHeight = 42;
 const padding = 12;
