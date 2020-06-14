@@ -48,6 +48,21 @@ export default function App({
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#039e2f" />
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-169335991-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-169335991-1');
+            `,
+          }}
+        />
       </Head>
       <Component {...pageProps} />
     </>
