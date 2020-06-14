@@ -1,3 +1,3 @@
-# SynDev Technologies website
+# Website for SynDev Technologies
 
 [https://syndev.co](https://syndev.co)

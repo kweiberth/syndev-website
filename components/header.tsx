@@ -59,7 +59,7 @@ export default function Header({
   }, []);
 
   return (
-    <div ref={headerRef}>
+    <div ref={headerRef} data-test-id="header">
       <div
         css={{
           display: 'flex',
@@ -109,12 +109,15 @@ export default function Header({
       </div>
       <Sticky
         display={shouldFixTabsToTop ? 'block' : 'none'}
-        visibility={shouldFixTabsToTop ? 'hidden' : 'visible'}
+        visibility={'hidden'}
         position="static"
       >
         <HeaderTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </Sticky>
-      <Sticky position={shouldFixTabsToTop ? 'fixed' : 'inherit'}>
+      <Sticky
+        position={shouldFixTabsToTop ? 'fixed' : 'inherit'}
+        data-test-id="header-tabs"
+      >
         <HeaderTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </Sticky>
     </div>
