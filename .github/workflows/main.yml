@@ -9,5 +9,5 @@ jobs:
       - name: Run Cypress
         uses: cypress-io/github-action@v1
         with:
-          start: npm run build && npm start
+          start: 'npm run build && npm start'
           wait-on: 'http://localhost:26780'
