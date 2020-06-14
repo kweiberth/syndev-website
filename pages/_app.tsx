@@ -25,7 +25,7 @@ export default function App({
         <title>{`SynDev Technologies`}</title>
         <meta
           name="description"
-          content="SynDev Technologies provides consulting in the synthesis and progression of pharmacologically active new small molecules from lab to clinic to commercial manufacturing."
+          content="Franz Weiberth provides consulting in the synthesis and progression of pharmacologically active new small molecules from lab to clinic to commercial manufacturing."
         />
         <link
           rel="apple-touch-icon"
