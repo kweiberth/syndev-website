@@ -1,6 +1,10 @@
+// @ts-ignore Next.js automatically sets "isolatedModules": true, which means
+// we get an error with decalring consts if the file does not import nor export
 const emailHref = 'mailto:franz.weiberth@syndev.co';
 
 it('should test all the major stuff', () => {
+  cy.viewport('iphone-x');
+
   cy.visit('/');
 
   // Logo in header is visible, i.e. within the viewport
