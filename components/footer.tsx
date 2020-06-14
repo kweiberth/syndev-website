@@ -18,6 +18,7 @@ const ImageWrapperWithBorder = styled.div({
 export default function Footer() {
   return (
     <div
+      data-test-id="footer"
       css={{
         padding: 12,
         display: 'flex',
