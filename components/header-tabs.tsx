@@ -100,7 +100,7 @@ export default function HeaderTabs({
   setSelectedTab,
 }: {
   selectedTab: string;
-  setSelectedTab: Function;
+  setSelectedTab: (arg: string) => void;
 }) {
   const router = useRouter();
 

@@ -25,7 +25,7 @@ export default function Header({
   setSelectedTab,
 }: {
   selectedTab: string;
-  setSelectedTab: Function;
+  setSelectedTab: (arg: string) => void;
 }) {
   const [shouldFixTabsToTop, setShouldFixTabsToTop] = useState(false);
 
