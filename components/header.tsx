@@ -39,11 +39,13 @@ export default function Header({
       const { current: $el } = headerRef;
 
       if (
+        $el &&
         $el.getBoundingClientRect().y < headerStickySwitch &&
         shouldFixTabsToTopRef.current === false
       ) {
         setShouldFixTabsToTop(true);
       } else if (
+        $el &&
         $el.getBoundingClientRect().y >= (logoHeight + padding + 1) * -1 &&
         shouldFixTabsToTopRef.current === true
       ) {
