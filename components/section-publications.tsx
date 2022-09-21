@@ -21,7 +21,7 @@ const publications = [
   `Weiberth, F. J. et al. “Improved Preparation of Azaindole Compounds” PCT Int. Appl. WO2008014249, 2008.`,
   `Weiberth, F. J. et al. “Process for the Preparation of <i>N</i>-Amino Substituted Heterocyclic Compounds” U.S. Pat. 7112682, 2006.`,
   `Watson, T. J. N.; Horgan, S. H.; Shah, R. S.; Farr, R. A.; Schnettler, R. A.; Nevill, Jr., C. R.; Weiberth, F. J.; Huber, E. W.; Baron, B. M.; Webster, M. E.; Mishra, R. K.; Harrison, B. L.; Nyce, P. L.; Rand, C. L.; Goralski, C. T. “Chemical Development of MDL 103371:  An <i>N</i>-Methyl-D-Aspartate-Type Glycine Receptor Antagonist for the Treatment of Stroke” <i>Org. Process Res. Dev.&nbsp;</i> <b>2000</b>, <i>4(6)</i>, 477-487.`,
-  `Weiberth, F. J. “One-Pot Preparation of <i>N</i>-(Carbonylamino)amino Acids and Half-Acid/Half-Ester Urea Dipeptides Directly from -Amino Acids” <i>Tetrahedron Lett.&nbsp;</i> <b>1999</b>, <i>40</i>, 2895-2898.`,
+  `Weiberth, F. J. “One-Pot Preparation of <i>N</i>-(Carbonylamino)amino Acids and Half-Acid/Half-Ester Urea Dipeptides Directly from α-Amino Acids” <i>Tetrahedron Lett.&nbsp;</i> <b>1999</b>, <i>40</i>, 2895-2898.`,
   `Lee, T. B. K.; Tebben, A. J.; Weiberth, F. J.; Wong, G. S. K. “An Expedient Large-Scale Synthesis of a Dibenz[b,e]oxepinone Derivative” <i>Synth. Commun.&nbsp;</i> <b>1998</b>, <i>28</i>, 747-751.`,
   `Weiberth, F. J. "Retractable Batch Reactor Sampler" U.S. Pat. 5747708, 1998.`,
   `Weiberth, F. J. "Safely Measuring pH in Reactors" <i>Chem. Process.&nbsp;</i> <b>1996</b>, <i>59(4)</i>, 75-78.`,

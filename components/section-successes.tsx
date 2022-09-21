@@ -16,8 +16,10 @@ const successes = [
   },
   {
     heading: 'CMC Leadership',
-    content:
-      'Coordinated multi-disciplinary teams, including, chemistry, analytics, physical quality, formulations, sourcing, supply chain functions, to align activities with project team objectives and to drive the advancement of small molecules in development.',
+    bullets: [
+      'Coordinated multi-disciplinary teams, including, chemistry, analytics, physical quality, formulations, sourcing, supply chain functions, to align activities with project team objectives and to drive the advancement of small molecules in development',
+      'Drafted regulatory documents to support IND filings (Module 3)',
+    ],
   },
   {
     heading: 'Lab leadership',
