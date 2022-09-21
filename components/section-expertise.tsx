@@ -6,6 +6,7 @@ const expertises = [
   'CMC strategy and coordination',
   'Project progression, early development to clinic',
   'Drugability assessments',
+  'Drafting regulatory documents to support INDs (Module 3)',
   'Organic chemistry',
   'Route scouting and optimization',
   'Multi-step synthesis development',
