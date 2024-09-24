@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
     "dev": "next dev -p 26780",
     "build": "next build",
     "lint": "eslint . --ext .js,.ts,.tsx",
+    "playwright:run": "playwright test",
+    "playwright:ui": "playwright test --ui",
     "prod": "npm run build && npm run start",
     "start": "next start -p 26780",
     "type": "tsc --noEmit"
@@ -20,12 +20,12 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.47.2",
     "@types/node": "^20.16.6",
     "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
-    "cypress": "^8.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.24.0",
