@@ -109,7 +109,6 @@ ul {
 /* custom css reset */
 html,
 body {
-  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   color: #150752;
   line-height: 1.5;
   font-size: 14px;
@@ -121,21 +120,13 @@ body {
   height: 100%;
 }
 
-/* .wf-active is added to html by webfontloader; see client/index.js */
-html.wf-active body,
-html.wf-active #react-mount,
-html.wf-active button,
-html.wf-active input {
-  font-family: 'Barlow', Helvetica-Neue, Helvetica, Arial, sans-serif;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 button {
-  font-family: 'Barlow', Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-family: inherit;
   color: #150752;
   font-weight: 300;
   font-size: 14px;
