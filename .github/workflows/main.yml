@@ -1,7 +1,7 @@
 name: End-to-end tests
 on: [pull_request]
 jobs:
-  test:
+  playwright:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
