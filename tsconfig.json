@@ -13,8 +13,7 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "skipLibCheck": true,
-    "isolatedModules": true,
-    "incremental": true
+    "isolatedModules": true
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts"]
