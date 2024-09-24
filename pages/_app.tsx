@@ -1,6 +1,12 @@
-import { useEffect } from 'react';
 import '../reset.css';
 import Head from 'next/head';
+import Script from 'next/script';
+import { Barlow } from 'next/font/google';
+
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
 
 export default function App({
   Component,
@@ -9,16 +15,6 @@ export default function App({
   Component: any;
   pageProps: any;
 }) {
-  useEffect(() => {
-    import('webfontloader').then((Webfont) =>
-      Webfont.load({
-        google: {
-          families: ['Barlow:400,500,600,700'],
-        },
-      }),
-    );
-  }, []);
-
   return (
     <>
       <Head>
@@ -49,11 +45,11 @@ export default function App({
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="theme-color" content="#ffffff" />
 
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-169335991-1"
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -64,7 +60,9 @@ export default function App({
           }}
         />
       </Head>
-      <Component {...pageProps} />
+      <main className={barlow.className}>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }
