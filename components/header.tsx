@@ -14,7 +14,13 @@ const padding = 12;
 
 const headerStickySwitch = -1 * (logoHeight + padding);
 
-const Sticky = styled.div({ top: 0, width: '100%' }, (props: any) => ({
+interface StickyProps {
+  position?: React.CSSProperties['position'];
+  display?: React.CSSProperties['display'];
+  visibility?: React.CSSProperties['visibility'];
+}
+
+const Sticky = styled.div<StickyProps>({ top: 0, width: '100%' }, (props) => ({
   position: props.position || 'fixed',
   display: props.display || 'block',
   visibility: props.visibility || 'visible',
@@ -26,7 +32,7 @@ export default function Header({
 }: {
   selectedTab: string;
   setSelectedTab: (arg: string) => void;
-}) {
+}): JSX.Element {
   const [shouldFixTabsToTop, setShouldFixTabsToTop] = useState(false);
 
   const headerRef = useRef(null);

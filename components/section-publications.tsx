@@ -39,7 +39,7 @@ const publications = [
   `Ranus, W.; Loewenstein, R.; Weiberth, F.; Zirlis, J.; Bugbee, H. "Carboxylation of Metal Aryloxides" Eur. Pat. Appl. EP 102833, 1984; <u>Chem. Abstr.</u> 1984, <u>101</u>, 72430a.`,
 ];
 
-export default function SectionPublications() {
+export default function SectionPublications(): JSX.Element {
   return (
     <>
       <div

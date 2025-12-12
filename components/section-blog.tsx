@@ -1,4 +1,4 @@
-export default function SectionBlog() {
+export default function SectionBlog(): JSX.Element {
   return (
     <div
       css={{

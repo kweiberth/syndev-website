@@ -24,7 +24,7 @@ const Bold = styled.span({
   color: colors.purple,
 });
 
-export default function SectionExpertise() {
+export default function SectionExpertise(): JSX.Element {
   return (
     <>
       <div

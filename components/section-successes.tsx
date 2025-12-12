@@ -78,7 +78,7 @@ const successes = [
   },
 ];
 
-export default function SectionSuccesses() {
+export default function SectionSuccesses(): JSX.Element {
   return (
     <>
       <div

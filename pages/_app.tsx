@@ -2,19 +2,14 @@ import '../reset.css';
 import Head from 'next/head';
 import Script from 'next/script';
 import { Barlow } from 'next/font/google';
+import { AppProps } from 'next/app';
 
 const barlow = Barlow({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 });
 
-export default function App({
-  Component,
-  pageProps,
-}: {
-  Component: any;
-  pageProps: any;
-}) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>

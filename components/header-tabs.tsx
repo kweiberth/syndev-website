@@ -70,6 +70,10 @@ const Filter = styled.button({
   },
 });
 
+interface FilterTextProps {
+  isActive: boolean;
+}
+
 const FilterText = styled.div(
   {
     display: 'inline-flex',
@@ -79,7 +83,7 @@ const FilterText = styled.div(
     fontSize: 14,
     fontWeight: 700,
   },
-  (props: any) => ({
+  (props: FilterTextProps) => ({
     color: props.isActive ? colors.purple : colors.lightPurple,
     borderBottom: props.isActive
       ? `2px solid ${colors.green}`
@@ -101,11 +105,11 @@ export default function HeaderTabs({
 }: {
   selectedTab: string;
   setSelectedTab: (arg: string) => void;
-}) {
+}): JSX.Element {
   const router = useRouter();
 
-  function onTabClick(value) {
-    return function (event) {
+  function onTabClick(value: string) {
+    return function (event: React.MouseEvent<HTMLButtonElement>) {
       event.preventDefault();
       setSelectedTab(value);
       router.replace(`/${value}`, undefined, { shallow: true });

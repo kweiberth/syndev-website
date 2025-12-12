@@ -8,7 +8,12 @@ import SectionSuccesses from 'components/section-successes';
 import SectionPublications from 'components/section-publications';
 import SectionBlog from 'components/section-blog';
 
-const StickyFooter = styled.div(
+interface StickyFooterProps {
+  position?: React.CSSProperties['position'];
+  visibility?: React.CSSProperties['visibility'];
+}
+
+const StickyFooter = styled.div<StickyFooterProps>(
   {
     bottom: 0,
     left: 0,
@@ -16,7 +21,7 @@ const StickyFooter = styled.div(
     background: colors.white,
     borderTop: `1px solid ${colors.grey}`,
   },
-  (props: any) => ({
+  (props) => ({
     position: props.position || 'fixed',
     visibility: props.visibility || 'visible',
   }),
@@ -42,7 +47,7 @@ export default function MainPage({
   initialSelectedTab = 'expertise',
 }: {
   initialSelectedTab?: string;
-}) {
+}): JSX.Element {
   const [selectedTab, setSelectedTab] = useState(initialSelectedTab);
   const SectionToRender = sectionsByTab[selectedTab];
   return (

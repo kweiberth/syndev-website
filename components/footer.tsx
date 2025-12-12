@@ -15,7 +15,7 @@ const ImageWrapperWithBorder = styled.div({
   boxShadow,
 });
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <div
       data-test-id="footer"
