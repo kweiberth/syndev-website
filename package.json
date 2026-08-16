@@ -2,6 +2,9 @@
   "name": "syndev-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev -p 26780",
     "build": "next build",
